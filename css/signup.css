@@ -1,0 +1,145 @@
+/*들여쓰기: 2칸, 큰따옴표 사용, 세미콜론 붙이기*/
+/*폰트: 지마켓 산스*/ 
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.logo {
+  border: 2px solid black;
+}
+.logo .d-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  width: 250px;
+  margin: 0;
+  text-align: center;
+}
+.logo-icon {
+  justify-self:end;
+  margin: 0 20px 0 20px;
+}
+.logo .d-flex {
+  justify-content: space-evenly;
+}
+.bi {
+  font-size: 1.5em;
+}
+/*위에 다시*/
+.membership h3 {
+  text-align: center;
+  margin: 50px 0 50px 0;
+}
+/*메인*/
+.navbar .bg-body-tertiary {
+  width: 600px;
+  text-align: center;
+}
+.navbar-text {
+  text-align: left;
+}
+.inner-ko p strong{
+  color: red !important;
+}
+b, strong {
+  color: red;
+  font-weight: bolder;
+}
+.inner-box {
+  text-align: end;
+}
+/* 타이머*/
+.short-inner-box span {
+  color:#042afff4;
+}
+.input-box {
+  width: 584px;
+  height: 46px;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  background-color: #E6E6E6;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.input-box {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+.input-box p{
+  display: inline-flex;
+  gap: 8px;
+  text-align: end; 
+  
+}
+.input-box input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.input-box button {
+  padding: 5px 10px;
+}
+.navbar {
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0 400px 0 400px;
+}
+.button {
+  color: #f4eeff;
+}
+.input-box {
+  width: 342px;
+  text-align: center;
+  }
+/*버튼 글 색*/
+.btn-secondary {
+  color: rgb(0, 0, 0) !important;
+}
+/*버튼*/
+.btn-secondary {
+  --bs-btn-bg: #f4eeff !important;
+  --bs-btn-hover-bg: #e3d6ff !important;
+  border-radius: 50px !important;
+}
+.navbar>.container-fluid {
+  justify-content: space-around !important;
+}
+.agree  {
+  text-align: center;
+  margin:50px 0 50px 0;
+  font-size: x-large;
+}
+/* CSS */
+.agree-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+.agree-box .btn {
+  max-width: 100%;
+  white-space: normal;
+  line-height: 1.5;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+.sign-up .btn {
+  max-width: 100%;
+  white-space: normal;
+  line-height: 1.5;
+  padding: 15px 20px;
+  font-size: 16px;
+}
