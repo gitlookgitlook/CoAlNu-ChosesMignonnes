@@ -1,13 +1,27 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* 전체 로그인 컨테이너 */
 .login-wrapper {
-  width: 720px;
-  margin: 50px auto;
+  width: 434px;
+  margin: 0;
   padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 12px;
 }
 
 /* 로고 영역 */
@@ -15,23 +29,29 @@
   width: 300px;
   height: 300px;
   margin: auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   border-radius: 8px;
 }
 
 /* 로그인 폼 */
 .login-form {
-  width: 520px;
-  border: 1px solid red;
+  width: 434px;
+  /* border: 1px solid red; */
 }
 
 /* 입력 필드 */
 .login-input {
-  width: 520px;
-  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 15px;
   border: none;
   border-bottom: 2px solid #c4c4c4;
   background-color: transparent;
+}
+
+.login-input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #d7c4ff;
 }
 
 /* 브라우저 기본 체크박스를 완전히 숨김 */
@@ -82,11 +102,11 @@ input[type="checkbox"]:checked + label::before {
 
 /* 버튼 컨테이너 */
 .login-btns {
-  width: 520px;
+  width: 434px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 /* 로그인 버튼 */
@@ -106,4 +126,35 @@ input[type="checkbox"]:checked + label::before {
   color: #d7c4ff;
   text-decoration-line: none;
   text-align: center;
+}
+
+.btn-login:hover,
+.btn-signup:hover {
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(215, 196, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+/* 768px 이하 (모바일/작은 태블릿) */
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start; /* 모바일에서는 상단 정렬 */
+    padding-top: 25px;
+  }
+
+  .login-wrapper {
+    width: 318px;
+    padding: 25px;
+    gap: 15px;
+  }
+
+  .login-logo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .login-form,
+  .login-btns {
+    width: 318px;
+  }
 }
