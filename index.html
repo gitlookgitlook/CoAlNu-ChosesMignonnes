@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link href="main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 
   </head>
   <body>
@@ -17,33 +17,33 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
               <a class="navbar-brand fw-bold" href="#">Choses Mignonnes</a>
-                <div class="d-flex align-items-center gap-3">
-                    <!-- 검색 -->
-                    <div class="search-container">
-                      <button class="search-icon-btn img-button text-2xl text-gray-800 hover:text-gray-600">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </button>
-                      <div class="search-popup">
-                          <input type="text" placeholder="검색어를 입력하세요..." />
-                          <button>검색</button>
-                      </div>
+              <div class="d-flex align-items-center gap-3">
+                  <!-- 검색 -->
+                  <div class="search-container">
+                    <button class="search-icon-btn img-button text-2xl text-gray-800 hover:text-gray-600">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="search-popup">
+                        <input type="text" placeholder="검색어를 입력하세요." />
+                        <button>검색</button>
                     </div>
-                    
-                    <!-- 로그인 버튼 추가 -->
-                    <button class="img-button text-2xl text-gray-800 hover:text-gray-600">
-                        <i class="fa-solid fa-lock"></i>
-                    </button>
-                    <!-- 장바구니 버튼 -->
-                    <button class="img-button text-2xl text-gray-800 hover:text-gray-600">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </button>
-                </div>
+                  </div>
+                  
+                  <!-- 로그인 버튼 추가 -->
+                  <button class="img-button text-2xl text-gray-800 hover:text-gray-600">
+                      <i class="fa-solid fa-lock"></i>
+                  </button>
+                  <!-- 장바구니 버튼 -->
+                  <button class="img-button text-2xl text-gray-800 hover:text-gray-600">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+              </div>
             </div>
         </div>
     </header>
 
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="main-nav navbar navbar-expand-lg">
       <div class="container-fluid">
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,13 +90,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
+          <img src="/images/plant.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
           <img src="https://insideobject.com/web/upload/NNEditor/20250805/070ed94478028d00855eaa3d3337509c.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="https://insideobject.com/web/upload/NNEditor/20250805/474e89dd6eb39ca2c98f99abbd04101c.png" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="	https://insideobject.com/web/upload/NNEditor/20250729/6519b740f948ac20a4f985a4b640ae4d.png" class="d-block w-100" alt="...">
+          <img src="/images/white.png" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -169,7 +169,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center mt-5 mb-5">
-            <button class="btn btn-secondary">상품 더보기</button>
+            <button class="main-button btn">상품 더보기</button>
       </div>
     </div>
 
@@ -215,7 +215,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center mt-5 mb-5">
-            <button class="btn btn-secondary">상품 더보기</button>
+            <button class="main-button btn">상품 더보기</button>
       </div>
     </div>
 
@@ -261,7 +261,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center mt-5 mb-5">
-            <button class="btn btn-secondary">상품 더보기</button>
+            <button class="main-button btn">상품 더보기</button>
       </div>
     </div>
     
@@ -292,7 +292,7 @@
             <span class="text-muted">© 2024 Your Company. All rights reserved.</span>
         </div>
 
-      <!-- 필요하다면 footer a 태그 사용!
+      <!-- 필요하다면 footer a 태그 사용
       <div class="col"><a href="#">Contact Us</a></div>
           <div class="col"><a href="#">Apps</a></div>
           <div class="col"><a href="#">Follow Us</a>
@@ -301,6 +301,26 @@
 
   </footer>
 
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <script>
+    const searchContainer = document.querySelector('.search-container');
+    const searchPopup = document.querySelector('.search-popup');
+    const searchIconBtn = document.querySelector('.search-icon-btn');
+
+    searchIconBtn.addEventListener('click', () => {
+      // search-popup 클래스에 'show' 클래스를 추가하거나 제거하여 팝업을 토글합니다.
+      searchPopup.classList.toggle('show');
+    });
+
+    // 팝업 외부를 클릭하면 팝업이 닫히도록 설정
+    document.addEventListener('click', (event) => {
+      // 클릭된 요소가 search-container 내부에 포함되지 않는 경우 팝업을 닫습니다.
+      if (!searchContainer.contains(event.target)) {
+        searchPopup.classList.remove('show');
+      }
+    });
+  </script>
   </body>
 </html>
