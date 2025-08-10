@@ -6,34 +6,55 @@
   font-weight: normal;
   font-style: normal;
 }
-.logo {
-  border: 2px solid black;
-}
-.logo .d-flex {
-  justify-content: space-between;
+/*nav 시작*/
+.first-logo {
+  height: 70px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+  padding: 0 20px;
+  /*border: 1px solid black;*/
+  background-color: #f4eeff;
 }
-.logo h1 {
-  width: 250px;
-  margin: 0;
-  text-align: center;
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  font-weight: bold;
 }
-.logo-icon {
-  justify-self:end;
-  margin: 0 20px 0 20px;
+.logo-icon i {
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
 }
-.logo .d-flex {
-  justify-content: space-evenly;
+/*nav 수정 끝*/
+/* 별 표시*/
+strong {
+  color: red;
 }
-.bi {
-  font-size: 1.5em;
+.form-label span {
+  color: red !important;
 }
-/*위에 다시*/
+/*별표시 끝*/
+/*메인 구간*/
 .membership h3 {
   text-align: center;
   margin: 50px 0 50px 0;
 }
-/*메인*/
+/*입력 박스*/
+.form-control {
+  background-color: #E6E6E6 !important;
+  border-radius: 35em !important;
+  width: 80vw; /* 화면 너비의 80% */
+  margin: 10px 0 10px 0;
+  max-width: 300px;
+}
+.form-control {
+  text-align: center;
+}
+/*입력 박스 끝*/
 .navbar .bg-body-tertiary {
   width: 600px;
   text-align: center;
@@ -41,25 +62,14 @@
 .navbar-text {
   text-align: left;
 }
-.inner-ko p strong{
-  color: red !important;
-}
-b, strong {
-  color: red;
-  font-weight: bolder;
-}
 .inner-box {
   text-align: end;
-}
-/* 타이머*/
-.short-inner-box span {
-  color:#042afff4;
 }
 .input-box {
   width: 584px;
   height: 46px;
   border-radius: 24px;
-  border: 1px solid #dfe1e5;
+  /*border: 10px solid #0049da;*/
   background-color: #E6E6E6;
   padding-left: 40px;
   padding-right: 40px;
@@ -73,7 +83,6 @@ b, strong {
   display: inline-flex;
   gap: 8px;
   text-align: end; 
-  
 }
 .input-box input {
   padding: 5px 10px;
@@ -84,7 +93,7 @@ b, strong {
   padding: 5px 10px;
 }
 .navbar {
-  border: 2px solid rgb(0, 0, 0);
+  /*border: 2px solid rgb(0, 0, 0);*/
   margin: 0 400px 0 400px;
 }
 .button {
@@ -103,6 +112,7 @@ b, strong {
   --bs-btn-bg: #f4eeff !important;
   --bs-btn-hover-bg: #e3d6ff !important;
   border-radius: 50px !important;
+  border: none !important;
 }
 .navbar>.container-fluid {
   justify-content: space-around !important;
@@ -112,7 +122,6 @@ b, strong {
   margin:50px 0 50px 0;
   font-size: x-large;
 }
-/* CSS */
 .agree-box {
   display: flex;
   justify-content: center;
@@ -128,6 +137,11 @@ b, strong {
   padding: 15px 20px;
   font-size: 16px;
 }
+.accordion-body {
+    padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x);
+    width: 400px !important;
+}
+/*가입하기 버튼*/
 .sign-up {
   display: flex;
   justify-content: center;
