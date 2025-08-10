@@ -1,5 +1,7 @@
+@import url("/css/common.css");
+
 body {
-  font-family: sans-serif;
+  font-family: "GmarketSansMedium", sans-serif;
 }
 
 /* ========== 링크 기본 스타일 ========== */
