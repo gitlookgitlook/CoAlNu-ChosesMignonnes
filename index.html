@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <link href="/css/main.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHOSES MIGNONNES</title>
+    <link rel="icon" type="image/png" href="/images/logo/chosesmignonnes-logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <link href="/css/main.css" rel="stylesheet" />
   </head>
   <body>
     <!-- 1. 상단 -->
     <!-- Header: 로고, 로그인, 토글 버튼 -->
-    <header class="p-3 mb-3 border-bottom">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-              <a class="navbar-brand fw-bold" href="#">Choses Mignonnes</a>
-              <div class="d-flex align-items-center gap-3">
-                  <!-- 검색 -->
-                  <div class="search-container">
-                    <button class="search-icon-btn img-button text-2xl text-gray-800 hover:text-gray-600">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <div class="search-popup">
-                        <input type="text" placeholder="검색어를 입력하세요." />
-                        <button>검색</button>
-                    </div>
-                  </div>
+    <header class="p-3 border-bottom">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <a class="navbar-brand fw-bold fs-4" href="#">Choses Mignonnes</a>
+          <div class="d-flex align-items-center gap-4">
+            <!-- 검색 -->
 
-                  <!-- 장바구니 버튼 -->
-                  <button class="img-button text-2xl text-gray-800 hover:text-gray-600">
-                      <i class="bi bi-cart4"></i>
-                  </button>
-                  
-                  <!-- 로그인 버튼 추가 -->
-                  <button class="img-button text-2xl text-gray-800 hover:text-gray-600">
-                      <i class="bi bi-person"></i>
-                  </button>
-                  
-              </div>
-            </div>
+            <!-- 검색 버튼 -->
+            <a href="#" class="text-2xl">
+              <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </a>
+
+            <!-- 장바구니 버튼 -->
+            <a href="#" class="text-2xl">
+              <i class="fa-solid fa-cart-shopping fa-lg"></i>
+            </a>
+
+            <!-- 로그인 버튼 -->
+            <a href="/login.html" class="text-2xl">
+              <i class="fa-solid fa-user fa-lg"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- nav -->
     <nav class="main-nav navbar navbar-expand-lg">
       <div class="container-fluid">
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-5">
             <li class="nav-item">
               <a class="nav-link main-nav-color" aria-current="page" href="#">NEW</a>
             </li>
@@ -83,29 +95,75 @@
     </nav>
 
     <!-- 2. 본문 -->
-    <!-- 배너 구현 -->
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <!-- 배너는 자동 재생, 5초마다 전환, 마스 올리면 정지, 이미지 클릭 가능 -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+      data-bs-pause="hover"
+    >
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
       </div>
+
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="https://insideobject.com/web/upload/NNEditor/20250805/070ed94478028d00855eaa3d3337509c.png" class="d-block w-100" alt="...">
+          <img
+            src="https://insideobject.com/web/upload/NNEditor/20250805/070ed94478028d00855eaa3d3337509c.png"
+            class="d-block w-100"
+            alt="배너1"
+            style="cursor: pointer"
+          />
         </div>
         <div class="carousel-item">
-          <img src="https://insideobject.com/web/upload/NNEditor/20250729/6519b740f948ac20a4f985a4b640ae4d.png" class="d-block w-100" alt="...">
+          <img
+            src="https://insideobject.com/web/upload/NNEditor/20250729/6519b740f948ac20a4f985a4b640ae4d.png"
+            class="d-block w-100"
+            alt="배너2"
+            style="cursor: pointer"
+          />
         </div>
         <div class="carousel-item">
-          <img src="/images/plant.png" class="d-block w-100" alt="...">
+          <img src="/images/plant.png" class="d-block w-100" alt="배너3" style="cursor: pointer" />
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -113,217 +171,318 @@
 
     <!-- container1 -->
     <div class="container">
-      <div class="mt-5 mb-5 fw-bold">NEW</div>
-      <div class="row">
+      <div class="mt-5 mb-5 fw-bold fs-4">NEW ✨</div>
+      <div class="row text-center">
         <div class="col-md-2 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202507/710dc21eb54031d2cafe82f8a19987cd.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-text text-left fw-bold">사각 가방</h6>
-              <h6>33,000원</h6>
-            </div>
+            <a href="https://ilbussetto.it/products/leather-card-holder">
+              <img
+                src="https://ilbussetto.it/cdn/shop/products/02_008_01.png?v=1643983523&width=3000"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-text text-left fw-bold">Card holder</h6>
+                <h6 class="text-dark">₩122,000</h6>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-2 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202507/5697f89410492c4f5ae3bcbf1f31b72e.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-text text-left fw-bold">두더지 키링</h6>
-              <h6>12,000원</h6>
-            </div>
+            <a
+              href="http://www.10x10.co.kr/shopping/category_prd.asp?itemid=6702656&srsltid=AfmBOopoInmk4o5JSoIsSksxitPEZhTCp2gGUdN7kXJ97noclmUFwdB7"
+            >
+              <img
+                src="https://thumbnail.10x10.co.kr/webimage/image/add1/670/A006702656_01.jpg?cmd=thumb&w=400&h=400&fit=true&ws=false"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-text text-left fw-bold">다이어리 키링</h6>
+                <h6 class="text-dark">₩24,000</h6>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-2 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202506/b9f23388c10971d0e95bf2d12f941b40.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-text text-left fw-bold">행운 다이어리</h6>
-              <h6>20,000원</h6>
-            </div>
+            <a
+              href="https://oa-mall.co.kr/product/%EC%98%A4%EC%95%84-%EB%A0%88%ED%8A%B8%EB%A1%9C-%ED%95%B8%EB%94%94%ED%8C%AC-%ED%9C%B4%EB%8C%80%EC%9A%A9-%EB%AF%B8%EB%8B%88-%EC%86%90-%EC%84%A0%ED%92%8D%EA%B8%B0-c%ED%83%80%EC%9E%85-usb-%EC%B6%A9%EC%A0%84%EC%8B%9D-%ED%95%B8%EB%93%9C-%EC%86%8C%ED%98%95-%EC%86%90%ED%92%8D%EA%B8%B0/1474/category/352/display/1/"
+            >
+              <img
+                src="https://oa-mall.co.kr/web/product/big/202505/f3cf2b96a3231cc074bfcf350c1da468.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-text text-left fw-bold">휴대용 선풍기</h6>
+                <h6 class="text-dark">₩18,800</h6>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-2 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202506/299f9312c9176c9ecda2f283023dc326.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-text text-left fw-bold">쿼카 인형</h6>
-              <h6>17,000원</h6>
-            </div>
+            <a
+              href="https://www.kittybunnypony.com/product/easy-black-box-bag-%EC%9D%B4%EC%A7%80-%EB%B8%94%EB%9E%99-%EB%B0%95%EC%8A%A4-%EB%B0%B1/9528/category/319/display/1/"
+            >
+              <img
+                src="https://www.kittybunnypony.com/web/upload/NNEditor/20250304/Easy-Black-Box-Bag-half01.jpg"
+                class="card-img-top"
+                alt="..."
+                style="height: 200px; object-fit: cover"
+              />
+              <div class="card-body">
+                <h6 class="card-text text-left fw-bold">Easy Black Box Bag</h6>
+                <h6 class="text-dark">₩43,000</h6>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-2 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202507/3c2007d2dfc3bffa862505e26baf2d35.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-text text-left fw-bold ">젤리스틱</h6>
-              <h6>17,000원</h6>
-            </div>
+            <a
+              href="https://www.coupang.com/vp/products/7344847175?itemId=2377014687&src=1139000&spec=10799999&addtag=400&ctag=7344847175&lptag=AF8812112&itime=20250810120912&pageType=PRODUCT&pageValue=7344847175&wPcid=17373737407740082012198&wRef=beacons.ai&wTime=20250810120912&redirect=landing&traceid=V0-101-3f5ad86aa0ea83cd&mcid=c62d660086994990b404ffee110a7256&placementid=&clickBeacon=&campaignid=&puidType=&contentcategory=&imgsize=&pageid=&tsource=&deviceid=&token=&contenttype=&subid=&sig=&impressionid=&campaigntype=&puid=&requestid=&ctime=&contentkeyword=&portal=&landing_exp=&subparam="
+            >
+              <img
+                src="https://contents.kyobobook.co.kr/sih/fit-in/600x0/gift/pdt/1793/hot1581045747018.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-text text-left fw-bold">오슬로 미니 텀블러</h6>
+                <h6 class="text-dark">₩9,900</h6>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-2 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202506/c04fafaa57ac527355995dd28e0e7f1f.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-text text-left fw-bold">아이스크림 주머니</h6>
-              <h6>17,000원</h6>
-            </div>
+            <a
+              href="https://www.coupang.com/vp/products/8172728373?itemId=23346514951&vendorItemId=93186779207&q=%5B%EB%AF%B8%EC%A7%80%EC%9D%98%EC%B0%AC%EC%9E%A5%5D%EB%A6%AC%EC%8A%A4%ED%85%8C%EB%A6%B0+%ED%8F%AC%EC%BC%93%ED%8C%A9_%EC%BF%A8%EB%AF%BC%ED%8A%B8+%ED%9B%84%EB%A0%88%EC%89%AC+%EB%B2%84%EC%8A%A4%ED%8A%B8+%ED%9C%B4%EB%8C%80%EC%9A%A9+%ED%95%84%EB%A6%84+%EB%B8%8C%EB%A0%88%EC%8A%A4+%EC%8A%A4%ED%8A%B8%EB%A6%BD+%EA%B5%AC%EA%B0%95+%EC%B2%AD%EA%B2%B0%EC%A0%9C&searchId=63ab7e11202848&sourceType=search&itemsCount=36&searchRank=2&rank=2"
+            >
+              <img
+                src="https://img.danawa.com/prod_img/500000/549/422/img/60422549_1.jpg?shrink=330:*&_v=20240719144035"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6 class="card-text text-left fw-bold">미니 구강 청결제</h6>
+                <h6 class="text-dark">₩13,500</h6>
+              </div>
+            </a>
           </div>
         </div>
       </div>
       <div class="d-flex justify-content-center mt-5 mb-5">
-            <button class="main-button btn">상품 더보기</button>
+        <button class="main-button btn">상품 더보기</button>
       </div>
     </div>
 
     <!-- container2 -->
     <div class="container">
-      <div class="mt-5 mb-5 fw-bold">BEST</div>
-      <div class="row">
+      <div class="mt-5 mb-5 fw-bold fs-4">HOT 🔥</div>
+      <div class="row text-center">
         <div class="col-md-3 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202507/710dc21eb54031d2cafe82f8a19987cd.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-left fw-bold">사각 가방</h5>
-              <h5>33,000원</h5>
-            </div>
+            <a href="https://www.showmall.shop/286/?idx=432">
+              <img src="https://cdn.imweb.me/thumbnail/20230215/c2c7b9d9da2d5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-text text-left fw-bold">미니 물티슈</h5>
+                <h5 class="text-dark">₩10,214</h5>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-3 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202507/5697f89410492c4f5ae3bcbf1f31b72e.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-left fw-bold">두더지 키링</h5>
-              <h5>12,000원</h5>
-            </div>
+            <a
+              href="https://popmart.co.kr/product/%EC%9E%91%EC%9D%80%EB%B3%84%EC%9D%98-%EB%B0%98%EC%A7%9D%EC%9D%B4%EB%8A%94-%EC%9D%BC%EC%83%81-%EC%8B%9C%EB%A6%AC%EC%A6%88-%EC%9D%B8%ED%98%95-%ED%82%A4%EB%A7%81/1900/category/385/display/1/"
+            >
+              <img
+                src="https://cafe24.poxo.com/ec01/popmart1/pdHAR3Nfo463PahlnCQH4tqtv6XfQgv25efr/Fi8hna/4VuGdF8EVvZOBnJev6YNKMVdi+nUR9JXVFnUNpTCkw==/_/web/product/extra/big/20250416/1223b735943a11c5b89779bf7d01e5c1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-text text-left fw-bold">인형 키링</h5>
+                <h5 class="text-dark">₩19,000</h5>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-3 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202506/b9f23388c10971d0e95bf2d12f941b40.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-left fw-bold">행운 다이어리</h5>
-              <h5>20,000원</h5>
-            </div>
+            <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000212564">
+              <img
+                src="https://image.oliveyoung.co.kr/cfimages/cf-goods/uploads/images/thumbnails/10/0000/0021/A00000021256406ko.jpg?qt=80"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-text text-left fw-bold">미니 바세린</h5>
+                <h5 class="text-dark">₩3,900</h5>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-3 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202506/299f9312c9176c9ecda2f283023dc326.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-left fw-bold">쿼카 인형</h5>
-              <h5>17,000원</h5>
-            </div>
+            <a
+              href="https://www.coupang.com/vp/products/7415077790?itemId=16406208489&src=1139000&spec=10799999&addtag=400&ctag=7415077790&lptag=AF8812112&itime=20250810122558&pageType=PRODUCT&pageValue=7415077790&wPcid=17373737407740082012198&wRef=beacons.ai&wTime=20250810122558&redirect=landing&traceid=V0-101-f54b6efa88e7b93c&mcid=7e8b50816a624bbf8444fc0e4ae148c9&placementid=&clickBeacon=&campaignid=&puidType=&contentcategory=&imgsize=&pageid=&tsource=&deviceid=&token=&contenttype=&subid=&sig=&impressionid=&campaigntype=&puid=&requestid=&ctime=&contentkeyword=&portal=&landing_exp=&subparam="
+            >
+              <img
+                src="https://thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/ac40/b09506b936ff62bfd3dfbb256a97490f5aecefedcb86db9338b17ed21f2a.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-text text-left fw-bold">미아크 에어팟 캐리어 케이스</h5>
+                <h5 class="text-dark">₩18,600</h5>
+              </div>
+            </a>
           </div>
         </div>
       </div>
       <div class="d-flex justify-content-center mt-5 mb-5">
-            <button class="main-button btn">상품 더보기</button>
+        <button class="main-button btn">상품 더보기</button>
       </div>
     </div>
 
     <!-- container3 -->
     <div class="container">
-      <div class="mt-5 mb-5 fw-bold">EVENT</div>
-      <div class="row">
+      <div class="mt-5 mb-5 fw-bold fs-4">RECOMMEND 💜</div>
+      <div class="row text-center">
         <div class="col-md-3 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202507/710dc21eb54031d2cafe82f8a19987cd.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-left fw-bold">사각 가방</h5>
-              <h5>33,000원</h5>
-            </div>
+            <a
+              href="https://m.saladmarket.co.kr/product/%EA%B7%B8%EB%A6%B0%ED%94%8C%EB%9E%98%EC%8B%9C-pixelook-%ED%94%BD%EC%84%B8%EB%A3%A9-%EB%AF%B8%EB%8B%88-%EB%B3%BC%ED%8E%9C/30340/"
+            >
+              <img
+                src="data:image/jpeg;base64,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"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-text text-left fw-bold">미니 볼펜</h5>
+                <h5 class="text-dark">₩4,700</h5>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-3 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202507/5697f89410492c4f5ae3bcbf1f31b72e.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-left fw-bold">두더지 키링</h5>
-              <h5>12,000원</h5>
-            </div>
+            <a href="https://zigzag.kr/catalog/products/152104990">
+              <img
+                src="https://cf.product-image.s.zigzag.kr/original/d/2024/11/10/30737_202411101028080346_43437.jpeg?width=720&height=720&quality=80&format=webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-text text-left fw-bold">짱구 미니 달력</h5>
+                <h5 class="text-dark">₩19,000</h5>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-3 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202506/b9f23388c10971d0e95bf2d12f941b40.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-left fw-bold">행운 다이어리</h5>
-              <h5>20,000원</h5>
-            </div>
+            <a
+              href="https://m.deumoon.kr/product/%EB%93%9C%EB%AC%B8-%EA%B3%A4%EB%93%9C%EB%A0%88-%EA%B3%A0%EC%B2%B4%ED%81%B4%EB%A0%8C%EC%A0%80/12/"
+            >
+              <img
+                src="https://cafe24.poxo.com/ec01/deumoon20/HOvhRhvOk+Cp2KY4JuusAvK7HdZ5GsCbY6IrQcECputA3EFRIO31aBApORqY1LZfq0fGcYrqkv5G0m/eJjsH5g==/_/web/product/big/202204/065ff565cc0fd9004258fabde130610b.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-text text-left fw-bold">드문 곤드레 고체클렌저</h5>
+                <h5 class="text-dark">₩23,200</h5>
+              </div>
+            </a>
           </div>
         </div>
         <div class="col-md-3 col-sm-12">
           <div class="card">
-            <img src="https://insideobject.com/web/product/medium/202506/299f9312c9176c9ecda2f283023dc326.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-left fw-bold">쿼카 인형</h5>
-              <h5>17,000원</h5>
-            </div>
+            <a
+              href="https://www.coupang.com/vp/products/7415077790?itemId=16406208489&src=1139000&spec=10799999&addtag=400&ctag=7415077790&lptag=AF8812112&itime=20250810122558&pageType=PRODUCT&pageValue=7415077790&wPcid=17373737407740082012198&wRef=beacons.ai&wTime=20250810122558&redirect=landing&traceid=V0-101-f54b6efa88e7b93c&mcid=7e8b50816a624bbf8444fc0e4ae148c9&placementid=&clickBeacon=&campaignid=&puidType=&contentcategory=&imgsize=&pageid=&tsource=&deviceid=&token=&contenttype=&subid=&sig=&impressionid=&campaigntype=&puid=&requestid=&ctime=&contentkeyword=&portal=&landing_exp=&subparam="
+            >
+              <img
+                src="https://sungyesa.com/new/data/file/secret/1794346571_QJZN4E3G_12.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-text text-left fw-bold">해태 오예스 미니</h5>
+                <h5 class="text-dark">₩3,280</h5>
+              </div>
+            </a>
           </div>
         </div>
       </div>
       <div class="d-flex justify-content-center mt-5 mb-5">
-            <button class="main-button btn">상품 더보기</button>
+        <button class="main-button btn">상품 더보기</button>
       </div>
     </div>
-    
 
     <!-- 바닥 -->
-    <!-- footer -->
     <footer class="border-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-sm-12">
-          <div class="pb-5 pt-5 fw-bold first-line">Choses Mignonnes</div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="pb-5 pt-5 first-line">운영시간 : 평일 오전 9시 ~ 오후 6시 (주말/공휴일 휴무)<br>점심시간 :<br>오후 12시 ~ 오후 1시
-            <br>주소 : 서울특별시 서대문구 연희로 142 (연희동) 2층 오브젝트
-            <br>문의 :md@gmail.com 기관/대량 구매문의 :name@gmail.com
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="pb-3 pb-md-5 pt-3 pt-md-5">
+              <h3 class="fw-bold mb-3">Choses Mignonnes</h3>
+              <p class="small">
+                프랑스어로 '귀여운 것들'<br />
+                일상을 특별하게 만드는<br />
+                라이프스타일 브랜드
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="pb-3 pb-md-5 pt-3 pt-md-5">
+              <h6 class="fw-bold mb-3">고객센터</h6>
+              운영시간 : 평일 오전 9시 ~ 오후 6시 (주말/공휴일 휴무)<br />
+              점심시간 : 오후 12시 ~ 오후 1시<br />
+              주소 : 서울특별시 서대문구 연희로 142 (연희동) 2층 오브젝트<br />
+              문의 : md@gmail.com<br />
+              기관/대량 구매문의 : name@gmail.com
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="pb-3 pb-md-5 pt-3 pt-md-5">
+              <h6 class="fw-bold mb-3">사업자 정보</h6>
+              사업자등록번호 : 610-88-00542<br />
+              [사업자정보확인]<br />
+              통신판매업신고 : 2016-서울마포-1355<br />
+              주소 : 서울특별시 마포구 와우산로35길 13(서교동)<br />
+              팩스 : 02-3144-7780<br /><br />
+            </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="pb-5 pt-5 first-line">사업자등록번호 :610-88-00542<br>[사업자정보확인]<br>통신판매업신고 :2016-서울마포-1355
-            <br>주소 : 서울특별시 마포구 와우산로35길 13(서교동)<br>팩스 : 02-3144-7780
-
-            <br>회사소개 이용약관 개인정보처리방침 이용안내
-          </div>
+        <div class="text-center pb-3">
+          <span class="text-muted">© 2024 Your Company. All rights reserved.</span>
         </div>
       </div>
-      <div class="container text-center">
-            <span class="text-muted">© 2024 Your Company. All rights reserved.</span>
-        </div>
+    </footer>
 
-      <!-- 필요하다면 footer a 태그 사용
-      <div class="col"><a href="#">Contact Us</a></div>
-          <div class="col"><a href="#">Apps</a></div>
-          <div class="col"><a href="#">Follow Us</a>
-      </div> -->
-    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
 
-  </footer>
+    <!-- 이미지 클릭 기능 JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = new bootstrap.Carousel(document.querySelector("#carouselExampleIndicators"));
 
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
-  <script>
-    const searchContainer = document.querySelector('.search-container');
-    const searchPopup = document.querySelector('.search-popup');
-    const searchIconBtn = document.querySelector('.search-icon-btn');
-
-    searchIconBtn.addEventListener('click', () => {
-      // search-popup 클래스에 'show' 클래스를 추가하거나 제거하여 팝업을 토글합니다.
-      searchPopup.classList.toggle('show');
-    });
-
-    // 팝업 외부를 클릭하면 팝업이 닫히도록 설정
-    document.addEventListener('click', (event) => {
-      // 클릭된 요소가 search-container 내부에 포함되지 않는 경우 팝업을 닫습니다.
-      if (!searchContainer.contains(event.target)) {
-        searchPopup.classList.remove('show');
-      }
-    });
-  </script>
+        // 이미지 클릭시 다음 슬라이드로
+        document.querySelectorAll(".carousel-item img").forEach((img) => {
+          img.addEventListener("click", () => carousel.next());
+        });
+      });
+    </script>
   </body>
 </html>
-
