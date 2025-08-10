@@ -50,8 +50,15 @@ body {
 
 .main-button {
   background-color: #D7C4FF;
-  border: 1px solid #D7C4FF;
+  border: none;
   color: white;
+  border-radius: 50px;
+  /* 부드러운 전환 효과를 위해 transition 추가 */
+  transition: all 0.3s ease-in-out; 
+}
+.main-button:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
 }
 
 footer{
