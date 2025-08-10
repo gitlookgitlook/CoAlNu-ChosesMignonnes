@@ -53,7 +53,6 @@ body {
   border: none;
   color: white;
   border-radius: 50px;
-  /* 부드러운 전환 효과를 위해 transition 추가 */
   transition: all 0.3s ease-in-out; 
 }
 .main-button:hover {
